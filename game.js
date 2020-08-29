@@ -3,6 +3,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 var level = 0;
 var begin = 0;
+var s = 0;
 
 // Keyboard Event
 $(document).keydown(function() {
@@ -40,7 +41,10 @@ function checker(currentLevel) {
         makeSound("wrong");
         $("body").addClass("game-over");
         $("h1").text("Game-Over, You reached level-" + level);
-
+        if(level > s) {
+            $("h2").text("High Score:" + level);
+            s = level;
+        }
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
