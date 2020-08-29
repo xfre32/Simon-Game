@@ -47,6 +47,19 @@ body {
   background-color: yellow;
 }
 
+.restart {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    background-color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+}
+
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
