@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <title>Simon</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Simon</title>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    </head>
 
-<body>
-  <h1 id="level-title">Press any Key to Start</h1>
-  <h2 id="high-score">High Score: 0</h2>
-  <div class="container">
-    <div class="row">
+    <body>
+        <h1 id="level-title">Press any Key to Start</h1>
+        <h2 id="high-score">High Score: 0</h2>
+        <div class="container">
 
-      <div type="button" id="green" class="btn green">
+            <div class="row">
 
-      </div>
+                <div type="button" id="green" class="btn green"></div>
+                <div type="button" id="red" class="btn red"></div>
 
-      <div type="button" id="red" class="btn red">
+            </div>
 
-      </div>
-    </div>
+            <div class="row">
 
-    <div class="row">
+                <div type="button" id="yellow" class="btn yellow"></div>
+                <div type="button" id="blue" class="btn blue"></div>
+                <div type="button" id="reset" class="restart">
+                    <p>Restart</p>
+                </div>
 
-      <div type="button" id="yellow" class="btn yellow">
+            </div>
 
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
-    <div class="row">
-
-        <div type="button" id="reset" class="restart">
-            <p>Restart
-         </p>
         </div>
-    </div>
 
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="game.js" charset="utf-8"></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="game.js" charset="utf-8"></script>
+
+    </body>
 
 </html>
