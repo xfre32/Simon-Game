@@ -101,7 +101,7 @@ function nextSequence() {
     var randomnNumber = Math.round(Math.random() * 3);
     var randomChosenColor = buttonColors[randomnNumber];
     gamePattern.push(randomChosenColor);
-    console.log("game:" + gamePattern);
+    //console.log("game:" + gamePattern);
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     makeSound(randomChosenColor);
     level++;
