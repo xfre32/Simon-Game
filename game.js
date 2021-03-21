@@ -20,7 +20,7 @@ $(".btn").click(function() {
     $(event.target).fadeIn(100).fadeOut(100).fadeIn(100);
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
-    console.log("user:" + userClickedPattern);
+    //console.log("user:" + userClickedPattern);
     makeSound(userChosenColor);
     animatePress(userChosenColor);
     checker(userClickedPattern.length - 1);
@@ -58,42 +58,13 @@ function checker(currentLevel) {
 
 }
 
+//Game reset
 function startOver() {
-    makeSound("reset")
+    makeSound("reset");
     begin = 0;
     level = 0;
     gamePattern = [];
 }
-
-
-
-// function checker() {
-//   var flag = 1;
-//   setTimeout(function() {
-//     for (var i = 0; i < userClickedPattern.length; i++) {
-//       if (gamePattern[i] === userClickedPattern[i]) {
-//         continue;
-//       } else {
-//         flag = 0;
-//         console.log("wrong");
-//         makeSound("wrong");
-//         $("body").addClass("game-over");
-//         $("h1").text("Game-Over, You reached level-" + level);
-//       }
-//     }
-// }, 10);
-//   setTimeout(function() {
-//     console.log(flag);
-//     if (flag === 1) {
-//         if (gamePattern.length === userClickedPattern.length) {
-//         console.log("true");
-//         setTimeout( function() {
-//             nextSequence();
-//         },1000);
-//       }
-//     }
-// }, 100);
-// }
 
 // Color Generator
 function nextSequence() {
